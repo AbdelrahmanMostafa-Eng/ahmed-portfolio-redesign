@@ -101,6 +101,7 @@ export function Header() {
               </Link>
             </div>
             <button
+              type="button"
               onClick={() => setOpen((o) => !o)}
               className="-me-2 grid size-10 place-items-center lg:hidden"
               aria-label={open ? t("Close menu", "إغلاق القائمة") : t("Open menu", "فتح القائمة")}

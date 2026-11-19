@@ -113,6 +113,7 @@
     border-color: var(--border);
   }
   html {
+    min-width: 320px;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
   }
