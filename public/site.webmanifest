@@ -1,24 +1,14 @@
 {
   "name": "Ahmed Elkhateeb — Computer & Software Engineer",
   "short_name": "Ahmed Elkhateeb",
-  "description": "Portfolio of Ahmed Elkhateeb, Computer & Software Engineer.",
+  "description": "Ahmed Elkhateeb — Computer & Software Engineer. Turning ideas into real solutions.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0ea5e9",
+  "background_color": "#f5f4f0",
+  "theme_color": "#111111",
   "icons": [
     {
-      "src": "/icon-light-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/apple-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon.svg",
+      "src": "/portfolio-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }

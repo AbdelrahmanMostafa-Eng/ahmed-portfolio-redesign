@@ -1,7 +1,18 @@
-import { LabNotes } from "@/components/lab-notes"
+import type { Metadata } from "next"
+import { ProfilePage } from "@/components/site/pages"
+import { CtaBand, FaqSection } from "@/components/site/sections"
 
-export const metadata = { title: "Professional Profile", description: "Ahmed Elkhateeb’s education, credentials, languages, and approach to practical technology." }
+export const metadata: Metadata = {
+  title: "Profile",
+  description: "Ahmed Elkhateeb’s credentials (CCNA, IT Essentials, ICDL), languages and working principles.",
+}
 
 export default function NotesPage() {
-  return <div className="pt-24"><LabNotes /></div>
+  return (
+    <>
+      <ProfilePage />
+      <FaqSection />
+      <CtaBand />
+    </>
+  )
 }

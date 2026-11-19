@@ -1,8 +1,20 @@
-import { Workbench } from "@/components/workbench"
 import type { Metadata } from "next"
+import { ExperiencePage } from "@/components/site/pages"
+import { CtaBand, ServicesSection } from "@/components/site/sections"
+import { getMedia } from "@/lib/media"
 
-export const metadata: Metadata = { title: "Workbench", description: "Ahmed Elkhateeb’s experience in ICT teaching, technical support, design, and technology sales." }
+export const metadata: Metadata = {
+  title: "Experience",
+  description: "Ahmed Elkhateeb’s career since 2007 — ICT department leadership, technology sales and consultation, technical support and design.",
+}
 
 export default function WorkbenchPage() {
-  return <div className="pt-24"><Workbench /></div>
+  const media = getMedia()
+  return (
+    <>
+      <ExperiencePage ict={media.ict} />
+      <ServicesSection matrix={media.matrix} />
+      <CtaBand />
+    </>
+  )
 }

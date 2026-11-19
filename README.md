@@ -27,7 +27,26 @@ The package.json identifies this project as ahmed-elkhateeb-portfolio. The older
 | 🌐 | Next.js pages |
 | ⚙️ | Personal portfolio |
 
-**Core stack:** Next.js 16 · React 19 · TypeScript · Tailwind
+**Core stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · Motion
+
+## 🎨 Design system & content
+
+The site uses a calm editorial design: warm paper background, IBM Plex / Inter Tight type (IBM Plex Sans Arabic for Arabic), hairline cards, word-by-word title reveals, dot-matrix section animations, sticky stacking cards, a magnetic cursor and a once-per-visit intro. Light by default, with a dark theme and full English/Arabic (RTL) support.
+
+| What | Where |
+|:--|:--|
+| All copy, in English and Arabic | `lib/content.ts` |
+| Colours, type and animation tokens | `app/globals.css` |
+| Home sections | `components/site/sections.tsx` |
+| Inner pages (Disciplines, Experience, Profile, Contact) | `components/site/pages.tsx` |
+
+**Photos** — drop these files into `public/images/` (`.webp`, `.jpg`, `.png` or `.avif`) and they appear at the next build; until then a drawn visual stands in:
+
+| File name | Used in |
+|:--|:--|
+| `ahmed-portrait` | Hero circle and Contact page |
+| `ahmed-matrix` | Dark "Services" feature panel |
+| `ict` | Current-role card (home and Experience page) |
 
 ## 🧠 Architecture at a glance
 
